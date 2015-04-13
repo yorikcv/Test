@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>test_1</title>
+    <style>
+    .leftColumn {
+        width: 200px;
+        height: 200px;
+        float: left;
+        background: #f55;
+    }
+    
+    .rightColumn {
+        margin-left: 220px;
+        background: #5ff;
+        overflow: hidden;
+    }
+    
+    .rightColumn .block1,
+    .rightColumn .block2 {
+        float: left;
+        width: 200px;
+        margin-right: 20px;
+        background: #ebde05;
+    }
+    
+    .rightColumn .block3 {
+        background: #9e9;
+        clear: both;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="leftColumn">leftColumn</div>
+    <div class="rightColumn">
+        <div class="block1">rightColumn block1</div>
+        <div class="block2">rightColumn block2</div>
+        <div class="block3">rightColumn block3</div>
+    </div>
+</body>
+
+</html>

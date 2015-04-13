@@ -1,0 +1,96 @@
+.filter {
+    background: #f2f6f9;
+    padding: 10px;
+}
+
+.filter h3 {
+    color: #4f7db0;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.headList {
+    background: #f2f6f9;
+    height: 100%;
+    position: relative;
+}
+
+.productsOnPage {
+    position: absolute;
+}
+
+.productsList .product {
+    padding: 10px;
+}
+
+.productsList .title {
+    color: #4f7db0;
+    text-align: center;
+    font-size: 12px;
+}
+
+.productsList .price {
+    text-align: center;
+    font-size: 18px;
+}
+
+.productsList img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.popular,
+.productsOnPage {
+    height: 30px;
+    
+
+}
+
+@media ( min-width: 790px) {
+    .productsOnPage {
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        margin: 10px;
+    }
+    .popular {
+        float: left;
+        margin: 10px;
+    }
+    .viewList {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        margin: 5px;
+        float: right;
+    }
+}
+
+.viewList li {
+    display: inline;
+}
+
+.viewList a {
+    display: inline-block;
+    padding: 10px;
+}
+
+@media ( max-width: 790px) {
+    .filter {
+        display: none;
+    }
+    .popular,
+    .productsOnPage,
+    .viewList {
+        position: inherit;
+        display: block;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 5px;
+    }
+    .viewList {
+        padding-left: 0;
+    }
+}   

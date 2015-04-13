@@ -1,0 +1,34 @@
+@font-face {
+    font-family: HelveticaNeueCyr;
+    src: local("HelveticaNeueCyr"), url(font/HelveticaNeueCyr-Bold.otf);
+    font-weight: bold;
+}
+
+body {
+    font-family: 'HelveticaNeueCyr', bold;
+}
+
+.phoneSection {
+    float: left;
+    position: relative;
+    height: 50px;
+    width: 190px;
+}
+
+.number,
+.phoneImg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.number {
+    margin-left: 45px;
+}
+
+.phoneImg {
+    height: 38px;
+    width: 38px;
+    background-image: url("phone.png");
+    background-repeat: no-repeat;
+}
